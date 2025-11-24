@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>咨询落地页模板</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; }
+    .section { width: 100%; padding: 40px 20px; box-sizing: border-box; }
+    .hero { text-align: center; padding: 80px 20px; background: #f5f5f5; }
+    .hero img { max-width: 200px; }
+    .hero h1 { margin-top: 20px; font-size: 28px; }
+    .two-col { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
+    .two-col .text, .two-col .image { flex: 1 1 45%; }
+    .two-col img { width: 100%; border-radius: 8px; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .feature-box { padding: 20px; background: #fafafa; border-radius: 8px; }
+    .contact-box { max-width: 500px; margin: 0 auto; padding: 30px; border-radius: 8px; background: #f0f0f0; }
+    input, textarea { width: 100%; padding: 12px; margin-top: 10px; border-radius: 6px; border: 1px solid #ccc; }
+    button { width: 100%; padding: 14px; margin-top: 20px; border: none; border-radius: 6px; background: #007bff; color: #fff; font-size: 16px; cursor: pointer; }
+      /* 弹跳动画 */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-10px); }
+      60% { transform: translateY(-6px); }
+    }
+    .floating-btn a {
+      animation: bounce 2.2s infinite;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 顶部 Banner -->
+  <section class="hero">
+    <img src="logo-placeholder.png" alt="Logo" />
+    <h1>主标题（医院/机构/服务亮点）</h1>
+    <p>副标题（一句话说明核心价值）</p>
+  </section>
+
+  <!-- 医生 / 专家介绍模块 -->
+  <section class="section">
+    <h2 style="text-align:center;">专家介绍</h2>
+    <div class="two-col">
+      <div class="image">
+        <img src="doctor-image.jpg" alt="专家照片" />
+      </div>
+      <div class="text">
+        <h3>专家姓名 / 头衔</h3>
+        <p>这里填写专家背景简介、经验、资质等。</p>
+        <ul>
+          <li>亮点1</li>
+          <li>亮点2</li>
+          <li>亮点3</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 医疗项目说明（可多组） -->
+  <section class="section" style="background:#fafafa;">
+    <h2 style="text-align:center;">项目介绍模块标题</h2>
+    <div class="two-col">
+      <div class="text">
+        <h3>项目名称</h3>
+        <p>项目说明内容，可讲原理、适用人群、效果等。</p>
+      </div>
+      <div class="image">
+        <img src="service-image-1.jpg" alt="项目图" />
+      </div>
+    </div>
+  </section>
+
+  <!-- 问题模块 -->
+  <section class="section" style="background:#fff;">
+    <h2 style="text-align:center;">常见问题（男性调理方向）</h2>
+    <div class="qa-list" style="max-width:700px;margin:0 auto;">
+
+      <div class="qa-item">1. 勃起维持困难？</div>
+      <div class="qa-item">2. 性生活时间太短？</div>
+
+      <!-- 咨询窗口 A -->
+      <div class="consult-box" style="padding:20px;margin:20px 0;border-radius:8px;background:#f5faff;border:1px solid #d7e7ff;text-align:center;">
+        <h3 style="margin:0 0 10px;">专业医师在线咨询</h3>
+        <p style="margin:0 0 15px;">无需手术 · 科学调理 · 私密沟通</p>
+        <a href="#consult-form" style="display:inline-block;padding:10px 18px;background:#007bff;color:#fff;border-radius:6px;text-decoration:none;">立即咨询</a>
+      </div>
+
+      <div class="qa-item">3. 性欲下降？</div>
+      <div class="qa-item">4. 无晨勃？</div>
+
+      <!-- 咨询窗口 B -->
+      <div class="consult-box" style="padding:20px;margin:20px 0;border-radius:8px;background:#f5faff;border:1px solid #d7e7ff;text-align:center;">
+        <h3 style="margin:0 0 10px;">专业医师在线咨询</h3>
+        <p style="margin:0 0 15px;">针对性评估 · 科学调理方案</p>
+        <a href="#consult-form" style="display:inline-block;padding:10px 18px;background:#007bff;color:#fff;border-radius:6px;text-decoration:none;">立即咨询</a>
+      </div>
+
+      <div class="qa-item">5. 勃起硬度不足？</div>
+      <div class="qa-item">6. 术后恢复不理想？（我们仅做调理，不做手术）</div>
+
+      <!-- 咨询窗口 C -->
+      <div class="consult-box" style="padding:20px;margin:20px 0;border-radius:8px;background:#f5faff;border:1px solid #d7e7ff;text-align:center;">
+        <h3 style="margin:0 0 10px;">调理方案咨询</h3>
+        <p style="margin:0 0 15px;">非手术 · 温和调理 · 定制化方案</p>
+        <a href="#consult-form" style="display:inline-block;padding:10px 18px;background:#007bff;color:#fff;border-radius:6px;text-decoration:none;">立即咨询</a>
+      </div>
+
+    </div>
+  </section>
+
+<!-- 优势模块 -->
+  <section class="section">
+    <h2 style="text-align:center;">机构优势</h2>
+    <div class="features">
+      <div class="feature-box">优势 1</div>
+      <div class="feature-box">优势 2</div>
+      <div class="feature-box">优势 3</div>
+      <div class="feature-box">优势 4</div>
+    </div>
+  </section>
+
+  <!-- 成功案例（可轮播或静态） -->
+  <section class="section" style="background:#fafafa;">
+    <h2 style="text-align:center;">成功案例</h2>
+    <div class="two-col">
+      <div class="image">
+        <img src="case-before.jpg" alt="Before" />
+      </div>
+      <div class="image">
+        <img src="case-after.jpg" alt="After" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA 咨询表单 -->
+  <section class="section">
+    <h2 style="text-align:center;">立即咨询</h2>
+    <div class="contact-box">
+      <input type="text" placeholder="您的姓名" />
+      <input type="tel" placeholder="手机号" />
+      <textarea rows="4" placeholder="您的需求"></textarea>
+      <button>提交咨询</button>
+    </div>
+  </section>
+
+  <!-- 浮动咨询按钮 -->
+  <style>
+    .floating-btn {
+      position: fixed;
+      right: 20px;
+      bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 9999;
+    }
+    .floating-btn a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #25d366;
+      color: #fff;
+      text-decoration: none;
+      font-size: 26px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .floating-btn a.fb { background:#0084ff; }
+    .floating-btn a.consult { background:#ff5722; }
+  </style>
+
+  <div class="floating-btn">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/你的号码" target="_blank">W</a>
+    <!-- FB Messenger -->
+    <a class="fb" href="https://m.me/你的页面ID" target="_blank">M</a>
+    <!-- 自定义咨询按钮 -->
+    <a class="consult" href="#consult-form">问</a>
+  </div>
+
+  <!-- 表单收集脚本 -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const button = document.querySelector('button');
+      button.addEventListener('click', function() {
+        const name = document.querySelector('input[placeholder="您的姓名"]').value;
+        const phone = document.querySelector('input[placeholder="手机号"]').value;
+        const needs = document.querySelector('textarea').value;
+
+        if (!phone) {
+          alert('请输入手机号');
+          return;
+        }
+
+        // 你可以在这里接 webhook、后端 API 或者第三方表单工具
+        console.log({ name, phone, needs });
+        alert('提交成功！我们会尽快联系您');
+      });
+    });
+  </script>
+
+</body>
+</html>
