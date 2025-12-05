@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>서울 강남 프리미엄 남성클리닉 | 발기력·지속력·성욕 회복 전문</title>
-    <meta name="description" content="수술 없이 발기부전, 조루, 성욕저하, 아침발기 회복. 서울대·연세대 출신 전문의 2인이 직접 진료">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <style>
-        *{margin:0;padding:0;box-sizing:border-box;font-family:'Pretendard','Noto Sans KR',sans-serif}
-        body{background:#f8f8f8;color:#333;line-height:1.6}
-        img{max-width:100%;height:auto;display:block}
-        .container{max-width:480px;margin:0 auto;background:#fff;position:relative;overflow-x:hidden}
-        .img-wrap{position:relative;width:100%;overflow:hidden;background:#f0f0f0}
-        .img-wrap img{width:100%;height:100%;object-fit:cover;loading:lazy}
-        .header{background:linear-gradient(135deg,#c21500,#ff512f);color:#fff;text-align:center;padding:40px 20px 30px}
-        .header h1{font-size:28px;font-weight:900;margin-bottom:10px}
-        .header p{font-size:18px;opacity:.95}
-        .team-banner{background:#111;padding:40px 20px;text-align:center;color:#fff}
-        .team-banner .img-wrap{height:280px;border-radius:12px}
-        .team-banner h2{font-size:22px;margin:20px 0 10px;color:#ffd700}
-        .doctor{padding:30px 20px;text-align:center;background:#fafafa}
-        .doctor:nth-child(4){background:#fff}
-        .doctor .img-wrap{width:140px;height:140px;border-radius:50%;margin:0 auto 15px;overflow:hidden;
-                        border:4px solid #ffd700;box-shadow:0 4px 15px rgba(255,215,0,.3)}
-        .doctor h3{font-size:20px;margin:15px 0 8px;color:#c21500}
-        .doctor p{font-size:14px;color:#555}
-        .section{padding:40px 20px;background:#fff}
-        .section h2{font-size:24px;text-align:center;margin-bottom:30px;color:#c21500;font-weight:900}
-        .problem{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,.08);margin-bottom:28px}
-        .problem .img-wrap{height:200px}
-        .problem .text{padding:22px}
-        .problem .text h3{font-size:19px;color:#c21500;margin-bottom:12px;line-height:1.4;font-weight:900}
-        .problem .text p{font-size:15.5px;color:#333;margin-bottom:20px;line-height:1.65}
-        .kakao-btn{display:block;width:92%;margin:20px auto;background:#fee500;color:#000;
-                  font-size:18px;font-weight:900;text-align:center;padding:18px;border-radius:12px;
-                  text-decoration:none;box-shadow:0 4px 15px rgba(254,229,0,.4);
-                  animation:pulse 2s infinite}
-        @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05);box-shadow:0 8px 25px rgba(254,229,0,.6)}}
-        .review-scroll{background:#111;color:#fff;padding:35px 0;overflow:hidden;white-space:nowrap}
-        .review-track{display:inline-block;animation:scroll 28s linear infinite}
-        .review-track:hover{animation-play-state:paused}
-        .review{display:inline-block;margin-right:60px;font-size:16px}
-        .review span{color:#ffd700}
-        @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
-        .form-area{background:linear-gradient(135deg,#c21500,#ff512f);color:#fff;padding:45px 20px;text-align:center}
-        .form-area h2{font-size:24px;margin-bottom:15px}
-        input,select{width:100%;padding:16px;margin:10px 0;border-radius:8px;border:none;font-size:16px}
-        .submit-btn{background:#fee500;color:#000;font-weight:900;font-size:20px;padding:18px;
-                    border:none;border-radius:12px;width:100%;cursor:pointer;animation:pulse 2s infinite}
-        .bottom-fixed{position:fixed;bottom:0;left:0;width:100%;background:#fee500;text-align:center;padding:15px;z-index:999}
-        .bottom-fixed a{color:#000;font-size:20px;font-weight:900;text-decoration:none}
-        .floating-kakao{position:fixed;right:15px;bottom:80px;z-index:1000;width:68px;height:68px;
-                        background:#fee500;border-radius:50%;box-shadow:0 5px 20px rgba(0,0,0,.3);
-                        text-align:center;line-height:68px;font-size:32px;color:#000;
-                        animation:float 3s ease-in-out infinite,pulse 2s infinite}
-        @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-15px)}}
-        .success-popup{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.9);
-                       display:none;align-items:center;justify-content:center;z-index:9999;flex-direction:column}
-        .success-box{background:#fff;padding:40px 30px;border-radius:20px;text-align:center;max-width:90%}
-        .success-box h3{font-size:24px;color:#c21500;margin-bottom:15px}
-        .success-box p{font-size:16px;color:#333;line-height:1.6}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>서울 강남 프리미엄 남성클리닉 | 발기력·지속력·성욕 회복 전문</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Pretendard','Noto Sans KR',sans-serif}
+    body{background:#f8f8f8;color:#333;line-height:1.6}
+    img{max-width:100%;height:auto;display:block}
+    .container{max-width:480px;margin:0 auto;background:#fff;position:relative;overflow-x:hidden}
+    .img-wrap{position:relative;width:100%;overflow:hidden;background:#f0f0f0}
+    .img-wrap img{width:100%;height:100%;object-fit:cover;loading:lazy}
+    .header{background:linear-gradient(135deg,#c21500,#ff512f);color:#fff;text-align:center;padding:40px 20px 30px}
+    .header h1{font-size:28px;font-weight:900;margin-bottom:10px}
+    .header p{font-size:18px;opacity:.95}
+    .team-banner{background:#111;padding:40px 20px;text-align:center;color:#fff}
+    .team-banner .img-wrap{height:280px;border-radius:12px}
+    .team-banner h2{font-size:22px;margin:20px 0 10px;color:#ffd700}
+    .doctor{padding:30px 20px;text-align:center;background:#fafafa}
+    .doctor:nth-child(4){background:#fff}
+    .doctor .img-wrap{width:140px;height:140px;border-radius:50%;margin:0 auto 15px;overflow:hidden;
+                    border:4px solid #ffd700;box-shadow:0 4px 15px rgba(255,215,0,.3)}
+    .doctor h3{font-size:20px;margin:15px 0 8px;color:#c21500}
+    .doctor p{font-size:14px;color:#555}
+    .section{padding:40px 20px;background:#fff}
+    .section h2{font-size:24px;text-align:center;margin-bottom:30px;color:#c21500;font-weight:900}
+    .problem{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,.08);margin-bottom:28px}
+    .problem .img-wrap{height:200px}
+    .problem .text{padding:22px}
+    .problem .text h3{font-size:19px;color:#c21500;margin-bottom:12px;line-height:1.4;font-weight:900}
+    .problem .text p{font-size:15.5px;color:#333;margin-bottom:20px;line-height:1.65}
+    .kakao-btn{display:block;width:92%;margin:20px auto;background:#fee500;color:#000;
+              font-size:18px;font-weight:900;text-align:center;padding:18px;border-radius:12px;
+              text-decoration:none;box-shadow:0 4px 15px rgba(254,229,0,.4);
+              animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05);box-shadow:0 8px 25px rgba(254,229,0,.6)}}
+    .review-scroll{background:#111;color:#fff;padding:35px 0;overflow:hidden;white-space:nowrap}
+    .review-track{display:inline-block;animation:scroll 28s linear infinite}
+    .review-track:hover{animation-play-state:paused}
+    .review{display:inline-block;margin-right:60px;font-size:16px}
+    .review span{color:#ffd700}
+    @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+    .form-area{background:linear-gradient(135deg,#c21500,#ff512f);color:#fff;padding:45px 20px;text-align:center}
+    input,select{width:100%;padding:16px;margin:10px 0;border-radius:8px;border:none;font-size:16px}
+    .submit-btn{background:#fee500;color:#000;font-weight:900;font-size:20px;padding:18px;
+                border:none;border-radius:12px;width:100%;cursor:pointer;animation:pulse 2s infinite}
+    .bottom-fixed{position:fixed;bottom:0;left:0;width:100%;background:#fee500;text-align:center;padding:15px;z-index:999}
+    .bottom-fixed a{color:#000;font-size:20px;font-weight:900;text-decoration:none}
+    .floating-kakao{position:fixed;right:15px;bottom:80px;z-index:1000;width:68px;height:68px;
+                    background:#fee500;border-radius:50%;box-shadow:0 5px 20px rgba(0,0,0,.3);
+                    text-align:center;line-height:68px;font-size:32px;color:#000;
+                    animation:float 3s ease-in-out infinite,pulse 2s infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-15px)}}
+    
+    /* 自定义感谢弹窗（完全覆盖所有页面） */
+    #customThanks{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;
+                  display:none;align-items:center;justify-content:center;z-index:99999;flex-direction:column;padding:20px}
+    #customThanks h3{font-size:26px;color:#c21500;margin-bottom:20px;text-align:center}
+    #customThanks p{font-size:18px;color:#333;line-height:1.8;text-align:center;margin-bottom:30px}
+    #customThanks a{background:#fee500;color:#000;font-weight:900;padding:20px 60px;border-radius:15px;
+                    font-size:22px;text-decoration:none;display:inline-block;animation:pulse 2s infinite}
+</style>
 </head>
 <body>
 <div class="container">
-    <!-- 你的完整页面内容（头部、团队、医生、6大痛点、评价滚动全部保留，和之前一样） -->
-    <!-- （为节省篇幅省略，你直接用之前的完整内容即可） -->
+    <!-- 你的完整页面内容（头部、医生、6大痛点、评价等全部保留，和之前一样） -->
+    <!-- （省略以节省篇幅，直接用你原来的完整内容即可） -->
 
-    <!-- 表单 + 提交后弹窗 -->
+    <!-- 表单（提交后弹出自定义感谢页） -->
     <div class="form-area">
         <h2>지금 예약하면<br>첫 진료비 50% + 호르몬 10종 무료 검사</h2>
         <p>※ 12월 31일까지 한정</p>
 
-        <form action="https://api.staticforms.xyz/submit" method="POST">
+        <form id="consultForm" action="https://api.staticforms.xyz/submit" method="POST">
             <input type="hidden" name="accessKey" value="sf_0dd7a5n63lk7i4hgj24ia5bg">
             <input type="hidden" name="emailTo" value="skytang147852sky@gmail.com">
             <input type="hidden" name="subject" value="[남성클리닉] 새로운 상담 신청">
@@ -90,6 +91,7 @@
                 <option>기타</option>
             </select>
             <input type="tel" name="연락처" placeholder="연락처 (- 없이 입력)" required>
+
             <input type="text" name="honeypot" style="display:none">
 
             <button type="submit" class="submit-btn">30초 예약 완료하기</button>
@@ -97,15 +99,11 @@
     </div>
 </div>
 
-<!-- 感谢弹窗（点击按钮进固定客服） -->
-<div class="success-popup" id="successPopup">
-    <div class="success-box">
-        <h3>감사합니다!</h3>
-        <p>이미 가장 적합한 전문의사를 매칭해 드렸습니다.<br>아래 버튼을 클릭하면 바로 1:1 상담이 시작됩니다.</p>
-        <a href="#" id="fixedKakaoBtn" style="background:#fee500;color:#000;font-weight:900;padding:18px 60px;border-radius:12px;text-decoration:none;display:inline-block;font-size:19px;margin-top:20px;animation:pulse 2s infinite">
-            바로 상담 시작하기
-        </a>
-    </div>
+<!-- 自定义感谢页面（完全覆盖） -->
+<div id="customThanks">
+    <h3>감사합니다!</h3>
+    <p>이미 가장 적합한 전문의사를 매칭해 드렸습니다.<br>아래 버튼을 클릭하면 바로 1:1 상담이 시작됩니다.</p>
+    <a href="#" id="finalKakaoBtn">바로 상담 시작하기</a>
 </div>
 
 <!-- 底部 + 浮动按钮 -->
@@ -117,7 +115,7 @@
 </a>
 
 <script>
-// 你的7个Kakao客服
+// 你的7个Kakao链接
 const kakaoLinks = [
     "http://pf.kakao.com/_rxkSYn/chat",
     "http://pf.kakao.com/_xjUSYn/chat",
@@ -128,32 +126,30 @@ const kakaoLinks = [
     "http://pf.kakao.com/_StSYn/chat"
 ];
 
-// 核心功能：同一个IP永远固定同一个客服（基于浏览器指纹+localStorage）
+// 同一个用户永远固定同一个客服（基于 localStorage）
 function getFixedKakao() {
-    let fingerprint = localStorage.getItem('userKakaoFingerprint');
-    if (!fingerprint) {
-        // 首次访问：生成固定指纹并分配客服
-        fingerprint = Math.random().toString(36).substring(2) + Date.now();
-        const index = Math.floor(Math.random() * kakaoLinks.length);
-        localStorage.setItem('userKakaoFingerprint', fingerprint);
-        localStorage.setItem('userKakaoIndex', index);
+    let index = localStorage.getItem('fixedKakaoIndex');
+    if (index === null) {
+        index = Math.floor(Math.random() * kakaoLinks.length);
+        localStorage.setItem('fixedKakaoIndex', index);
     }
-    const index = localStorage.getItem('userKakaoIndex');
     return kakaoLinks[index];
 }
 
-const fixedKakao = getFixedKakao();
+const myKakao = getFixedKakao();
 
-// 应用到所有按钮（包括弹窗）
-document.querySelectorAll('#bottomKakao, #floatKakao, #fixedKakaoBtn').forEach(el => {
-    el.href = fixedKakao;
+// 所有按钮都指向同一个固定客服
+document.querySelectorAll('#bottomKakao, #floatKakao, #finalKakaoBtn').forEach(el => {
+    el.href = myKakao;
 });
 
-// 提交后弹出感谢窗
-document.querySelector('form').addEventListener('submit', function(e) {
+// 表单提交后显示自定义感谢页（完全覆盖）
+document.getElementById('consultForm').addEventListener('submit', function(e) {
+    // 让Static Forms正常提交（信息进邮箱）
+    // 同时显示自定义页面
     setTimeout(() => {
-        document.getElementById('successPopup').style.display = 'flex';
-    }, 800);
+        document.getElementById('customThanks').style.display = 'flex';
+    }, 600);
 });
 </script>
 </body>
