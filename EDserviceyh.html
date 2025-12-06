@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>30살부터 벌써 안 서세요? 예전엔 20분 갔는데 지금은 3분도 못 가요?</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Pretendard','Noto Sans KR',sans-serif}
+    body{background:#f8f8f8;color:#333;line-height:1.6;overflow-x:hidden}
+    img{max-width:100%;height:auto;display:block}
+    .container{max-width:480px;margin:0 auto;background:#fff;position:relative}
+    .img-wrap{position:relative;width:100%;overflow:hidden;background:#111}
+    .img-wrap img{width:100%;height:100%;object-fit:cover;loading:lazy}
+    .header{background:#c21500;color:#fff;text-align:center;padding:35px 20px}
+    .header h1{font-size:24px;font-weight:900;line-height:1.4}
+    .header .sub{font-size:19px;margin-top:12px;opacity:0.95}
+    .team-banner{background:#111;padding:35px 20px;text-align:center;color:#fff}
+    .team-banner h2{font-size:23px;color:#ffd700;margin:15px 0;line-height:1.5}
+    .team-banner p{font-size:16px;line-height:1.7}
+    .doctor{padding:30px 20px;text-align:center;background:#fafafa}
+    .doctor:nth-child(4){background:#fff}
+    .doctor .img-wrap{width:140px;height:140px;border-radius:50%;margin:0 auto 15px;overflow:hidden;
+                    border:5px solid #ffd700;box-shadow:0 6px 20px rgba(255,215,0,.4)}
+    .doctor h3{font-size:21px;color:#c21500;margin:12px 0 8px;font-weight:900}
+    .doctor .title{color:#c21500;font-weight:900;font-size:14px}
+    .doctor p{font-size:14.5px;color:#555;line-height:1.7;margin:8px 0}
+    .section{padding:40px 20px 20px;background:#fff}
+    .section h2{font-size:25px;text-align:center;color:#c21500;font-weight:900;line-height:1.4;margin-bottom:35px}
+    .problem{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.1);margin-bottom:30px}
+    .problem .img-wrap{height:200px;background:#000}
+    .problem .text{padding:25px;background:#fff}
+    .problem .text h3{font-size:19px;color:#c21500;margin-bottom:15px;line-height:1.45;font-weight:900}
+    .problem .text p{font-size:16px;color:#333;line-height:1.75;margin-bottom:20px}
+    .kakao-btn{display:block;width:92%;margin:20px auto;background:#fee500;color:#000;
+              font-size:19px;font-weight:900;text-align:center;padding:20px;border-radius:15px;
+              text-decoration:none;box-shadow:0 6px 20px rgba(254,229,0,.5);
+              animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05);box-shadow:0 10px 30px rgba(254,229,0,.7)}}
+    .review-scroll{background:#111;color:#fff;padding:35px 0;overflow:hidden;white-space:nowrap}
+    .review-track{display:inline-block;animation:scroll 30s linear infinite}
+    .review{display:inline-block;margin-right:70px;font-size:17px}
+    .review span{color:#ffd700;font-weight:900}
+    @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+    .form-area{background:#c21500;color:#fff;padding:50px 20px;text-align:center}
+    .form-area h2{font-size:26px;margin-bottom:15px;line-height:1.4}
+    .form-area .tip{font-size:15px;margin:15px 0 25px;opacity:0.9}
+    input,select{width:100%;padding:18px;margin:12px 0;border-radius:12px;border:none;font-size:17px}
+    .submit-btn{background:#fee500;color:#000;font-weight:900;font-size:22px;padding:22px;
+                border:none;border-radius:15px;width:100%;cursor:pointer;animation:pulse 2s infinite}
+    .bottom-fixed{position:fixed;bottom:0;left:0;width:100%;background:#fee500;text-align:center;padding:18px;z-index:999}
+    .bottom-fixed a{color:#000;font-size:21px;font-weight:900;text-decoration:none}
+    .floating-kakao{position:fixed;right:18px;bottom:90px;z-index:1000;width:72px;height:72px;
+                    background:#fee500;border-radius:50%;box-shadow:0 6px 25px rgba(0,0,0,.4);
+                    text-align:center;line-height:72px;font-size:36px;color:#000;
+                    animation:float 3s ease-in-out infinite,pulse 2s infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-18px)}}
+    #customThanks{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;
+                  display:none;align-items:center;justify-content:center;z-index:99999;flex-direction:column;padding:20px;text-align:center}
+    #customThanks h3{font-size:28px;color:#c21500;margin-bottom:25px}
+    #customThanks p{font-size:19px;color:#333;line-height:1.8;margin-bottom:50px}
+    #customThanks a{background:#fee500;color:#000;font-weight:900;padding:25px 90px;border-radius:18px;
+                    font-size:24px;text-decoration:none;display:inline-block;animation:pulse 2s infinite}
+</style>
+</head>
+<body>
+<div class="container">
+
+    <!-- 제목 -->
+    <div class="header">
+        <h1>30살부터 벌써 안 서세요?<br>예전엔 20분 갔는데<br>요즘은 3분도 못 가요?</h1>
+        <div class="sub">90%가 그냥 두다 영구 발기부전 됐대요…</div>
+    </div>
+
+    <!-- 팀 배너 -->
+    <div class="team-banner">
+        <div class="img-wrap"><img src="https://github.com/gaka1as/cs/blob/main/%E5%8C%BB%E7%96%97%E5%9B%A2%E9%98%9F2.png?raw=true"></div>
+        <h2>작년 12,768명에게 20대 딱딱함 돌려준<br>서울대·연세대 출신 원장 2인이 직접 진료</h2>
+        <p>92%가 28일 안에 “진짜 다시 서네?” 깜짝 놀랐습니다</p>
+    </div>
+
+    <!-- 의료진 -->
+    <div class="doctor">
+        <div class="img-wrap"><img src="https://github.com/gaka1as/cs/blob/main/%E5%8C%BB%E7%94%9F1.png?raw=true"></div>
+        <h3>김민준 원장</h3>
+        <div class="title">전 삼성서울병원 남성의학과 교수</div>
+        <p>대한남성과학회 상임이사<br>누적 치료 28,000건 이상<br>연속 8년 “가장 신뢰받는 남성 주치의” 선정</p>
+    </div>
+
+    <div class="doctor">
+        <div class="img-wrap"><img src="https://github.com/gaka1as/cs/blob/main/%E5%8C%BB%E7%94%9F2.png?raw=true"></div>
+        <h3>박준혁 부원장</h3>
+        <div class="title">저강도 충격파 국내 시술 1위</div>
+        <p>전 세브란스 남성재생센터 팀장<br>누적 충격파 시술 18,000건+<br>“수술했는데도 안 선다” 난케이스 전문</p>
+    </div>
+
+    <!-- 6대 고민 -->
+    <div class="section">
+        <h2>아래 중 하나라도 해당되면<br><span style="color:#c21500">지금 당장 상담</span>받으세요</h2>
+
+        <div class="problem">
+            <div class="img-wrap"><img src="https://github.com/gaka1as/cs/blob/main/%E4%BC%B4%E4%BE%A3%E4%B8%8D%E5%BC%80%E5%BF%832.png?raw=true"></div>
+            <div class="text">
+                <h3>“예전엔 단단했는데… 요즘은 3분도 못 버텨요”</h3>
+                <p>분위기 타서 겨우 섰는데 여친이 조금만 움직여도 금방 풀려버리고…<br>결국 “괜찮아…” 하며 서로 폰만 보게 됩니다.<br>이러다간 진짜 영구 발기부전 된대요.</p>
+                <a href="#" class="kakao-btn fixed-kakao">나도 3분밖에 안 가는데… → 상담</a>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="img-wrap"><img src="https://github.com/gaka1as/cs/blob/main/1%20(5).png?raw=true"></div>
+            <div class="text">
+                <h3>“여친 아직 아무 느낌도 없는데… 나만 먼저 끝나요”</h3>
+                <p>키스도 길게 하고 콘돔도 꼼꼼히 썼는데,<br>삽입 몇 번 하지도 못하고 바로 사정…<br>여친 눈빛이 “또야?” 이럴 때 진짜 땅 꺼지고 싶어요.</p>
+                <a href="#" class="kakao-btn fixed-kakao">조루 때문에 여친 떠날까 두려워요 → 상담</a>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="img-wrap"><img src="https://github.com/gaka1as/cs/blob/main/%E8%94%9A%E5%B1%B1%E5%8B%83%E8%B5%B7%E5%8A%9F%E8%83%BD%E9%9A%9C%E7%A2%8D.png?raw=true"></div>
+            <div class="text">
+                <h3>“예쁜 여친 옆에 누웠는데… 전혀 하고 싶지 않아요”</h3>
+                <p>30대 초반까진 살짝만 스킨십해도 바로 반응했는데,<br>요즘은 옆에서 안겨도 “피곤해서 나중에…”만 반복.<br>여친이 “나한테 관심 없어?” 서운해합니다.</p>
+                <a href="#" class="kakao-btn fixed-kakao">여친 떠날까 봐 무서워요 → 상담</a>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="img-wrap"><img src="https://github.com/gaka1as/cs/blob/main/%E8%81%94%E7%B3%BB%E6%B3%8C%E5%B0%BF%E7%A7%91%E5%8C%BB%E7%94%9F.png?raw=true"></div>
+            <div class="text">
+                <h3>“아침에 깨면 무조건 텐트였는데… 요즘은 완전 조용해요”</h3>
+                <p>20대 때는 눈 뜨면 바로 딱딱했는데,<br>요즘은 아침 발기가 완전히 사라졌습니다.<br>의사가 말하길 “이러다 3년 안에 진짜 끝”이라고…</p>
+                <a href="#" class="kakao-btn fixed-kakao">아침에 안 서면 진짜 위험한가요? → 상담</a>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="img-wrap"><img src="https://github.com/gaka1as/cs/blob/main/%E6%B2%BB%E7%96%97%E5%89%8D%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E7%82%B9%E7%AE%80%E5%8C%96.png?raw=true"></div>
+            <div class="text">
+                <h3>“서긴 서는데… 고무줄처럼 늘어져서 넣을 수가 없어요”</h3>
+                <p>겨우 발기는 되는데 예전처럼 돌돌 말리게 단단하지 않아서<br>넣다가 금방 빠지고…<br>“조금만 더 기다려봐…” 하다 둘 다 포기합니다.</p>
+                <a href="#" class="kakao-btn fixed-kakao">반만 서는 상태로 계속 살고 싶지 않아요 → 상담</a>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="img-wrap"><img src="https://github.com/gaka1as/cs/blob/main/%E6%B2%BB%E7%96%97%E5%89%8D%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E7%82%B9%E7%AE%80%E5%8C%96.png?raw=true"></div>
+            <div class="text">
+                <h3>“포경수술 800만원 썼는데… 오히려 더 안 돼요”</h3>
+                <p>의사가 “수술하면 다 해결된다” 해서 했는데<br>1년이 지나도 예전만 못하고…<br>다시 가면 “나이 탓” “시간 필요”만 반복합니다.</p>
+                <a href="#" class="kakao-btn fixed-kakao">수술했는데 더 나빠졌어요 → 상담</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 실제 후기 롤링 -->
+    <div class="review-scroll">
+        <div class="review-track">
+            <div class="review"><span>최○○(39)</span> “한 달 만에 다시 20대 딱딱함 돌아왔어요”</div>
+            <div class="review"><span>박○○(45)</span> “아침 발기 12년 만에 돌아왔습니다ㅠㅠ”</div>
+            <div class="review"><span>김○○(41)</span> “포경 후 2년 동안 안 됐는데 6주 만에 완전 달라짐”</div>
+            <div class="review"><span>이○○(37)</span> “조루 때문에 이혼 직전이었는데… 지금은 새 여친 생김”</div>
+            <div class="review"><span>정○○(52)</span> “약 없이도 단단해져서 아내가 매일 웃어요”</div>
+            <div class="review"><span>최○○(39)</span> “한 달 만에 다시 20대 딱딱함 돌아왔어요”</div>
+        </div>
+    </div>
+
+    <!-- 폼 -->
+    <div class="form-area">
+        <h2>오늘 제출 = 내일 딱딱<br>삼성 출신 교수님이 직접 맞춤 처방</h2>
+        <div class="tip">한정：초진비 50% + 호르몬 10종 무료검사 (12월 31일까지)</div>
+
+        <form id="consultForm">
+            <input type="hidden" name="accessKey" value="sf_ageb30jgc6k3247kn26h2b51">
+            <input type="hidden" name="emailTo" value="aiden185163@gmail.com">
+            <input type="hidden" name="subject" value="새로운 남성클리닉 상담 신청">
+
+            <input type="text" name="이름" placeholder="이름" required>
+            <input type="number" name="나이" placeholder="나이" min="20" max="80" required>
+            <select name="주요 고민" required>
+                <option value="" disabled4" disabled selected>가장 고민되는 증상 1개만 골라주세요</option>
+                <option>3분도 못 버텨요</option>
+                <option>조루 심해요</option>
+                <option>전혀 하고 싶지 않아요</option>
+                <option>아침에 안 서요</option>
+                <option>서는데 무른 느낌</option>
+                <option>수술했는데 더 나빠짐</option>
+                <option>기타</option>
+            </select>
+            <input type="tel" name="연락처" placeholder="연락처 (- 없이)" required>
+            <input type="text" name="honeypot" style="display:none">
+
+            <button type="submit" class="submit-btn">지금 바로 가장 단단한 의사 매칭받기</button>
+        </form>
+    </div>
+</div>
+
+<!-- 커스텀 감사 페이지 -->
+<div id="customThanks">
+    <h3>감사합니다!</h3>
+    <p>이미 가장 적합한 전문의사를 매칭해 드렸습니다.<br>아래 버튼을 누르면 바로 1:1 상담이 시작됩니다.</p>
+    <a href="#" id="finalKakaoBtn">바로 상담 시작하기</a>
+</div>
+
+<div class="bottom-fixed"><a href="#" id="bottomKakao">카카오톡으로 바로 상담하기</a></div>
+<a href="#" id="floatKakao" class="floating-kakao"><i class="fas fa-comment-dots"></i></a>
+
+<script>
+// 7개 카카오 링크
+const kakaoLinks = [
+    "http://pf.kakao.com/_rxkSYn/chat",
+    "http://pf.kakao.com/_xjUSYn/chat",
+    "http://pf.kakao.com/_dkbYn/chat",
+    "http://pf.kakao.com/_CeSYn/chat",
+    "http://pf.kakao.com/_VWSYn/chat",
+    "http://pf.kakao.com/_IFbYn/chat",
+    "http://pf.kakao.com/_StSYn/chat"
+];
+
+// 같은 사람 = 항상 같은 상담사
+function getFixedKakao() {
+    let index = localStorage.getItem('myKakaoIndex');
+    if (index === null) {
+        index = Math.floor(Math.random() * kakaoLinks.length);
+        localStorage.setItem('myKakaoIndex', index);
+    }
+    return kakaoLinks[index];
+}
+const myKakao = getFixedKakao();
+
+// 모든 버튼에 적용
+document.querySelectorAll('.fixed-kakao, #bottomKakao, #floatKakao, #finalKakaoBtn').forEach(el => {
+    el.href = myKakao;
+});
+
+// 제출 후 커스텀 감사 페이지 표시 (어떤 성공 페이지도 안 뜸)
+document.getElementById('consultForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    fetch('https://api.staticforms.xyz/submit', {
+        method: 'POST',
+        body: new FormData(this)
+    }).finally(() => {
+        document.getElementById('customThanks').style.display = 'flex';
+    });
+});
+</script>
+</body>
+</html>
