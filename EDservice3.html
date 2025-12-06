@@ -53,8 +53,6 @@
                     text-align:center;line-height:68px;font-size:32px;color:#000;
                     animation:float 3s ease-in-out infinite,pulse 2s infinite}
     @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-15px)}}
-    
-    /* 完全自定义感谢页（覆盖一切） */
     #customThanks{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;
                   display:none;align-items:center;justify-content:center;z-index:99999;flex-direction:column;padding:20px;text-align:center}
     #customThanks h3{font-size:26px;color:#c21500;margin-bottom:20px}
@@ -65,7 +63,6 @@
 </head>
 <body>
 <div class="container">
-    <!-- 你的完整页面内容（全部保留） -->
     <div class="header">
         <h1>서울 강남 프리미엄 남성클리닉</h1>
         <p>발기력·지속력·성욕·아침발기<br><b>수술 없이 자신감 되찾기</b></p>
@@ -91,18 +88,60 @@
     <div class="section">
         <h2>아래 중 하나라도 해당되시면<br>지금 바로 상담하세요</h2>
 
-        <!-- 6大痛点全部保留（略去节省篇幅，直接用你原来的6个即可） -->
-        <!-- 每个痛点的Kakao按钮都加 class="fixed-kakao" -->
-        <!-- 示例（其他5个一样改） -->
+        <!-- 6大痛点（已全部加上 fixed-kakao） -->
         <div class="problem">
             <div class="img-wrap"><img src="https://github.com/gaka1as/cs/blob/main/%E4%BC%B4%E4%BE%A3%E4%B8%8D%E5%BC%80%E5%BF%832.png?raw=true"></div>
             <div class="text">
                 <h3>“분위기 타서 시작은 되는데… 3분도 안 돼 힘이 쭉 빠져버린다”</h3>
-                <p>......</p>
+                <p>처음엔 단단하게 섰다고 생각했는데,<br>여자친구가 조금만 움직여도 갑자기 풀려버리고,<br>결국 “괜찮아…” 하며 어색한 침묵만 흐르는 방 안.<br>“또 이렇게 될까봐” 하는 불안감 때문에 더 집중이 안 되고,<br>악순환이 반복되면서 아예 관계 자체를 피하게 됩니다.<br><br>30대 후반~40대 초반에 이런 증상이 급격히 늘어나는 건<br>혈관·호르몬·스트레스가 복합적으로 무너지고 있다는 명확한 신호입니다.</p>
                 <a href="#" class="kakao-btn fixed-kakao">지금 당장 카톡으로 무료 상담 받기</a>
             </div>
         </div>
-        <!-- 其他5个痛点全部复制你原来的，只把 class 加 "fixed-kakao" 即可 -->
+
+        <div class="problem">
+            <div class="img-wrap"><img src="https://github.com/gaka1as/cs/blob/main/1%20(5).png?raw=true"></div>
+            <div class="text">
+                <h3>“시작한 지 1~2분도 안 돼 끝나버려서… 차마 얼굴을 못 들겠다”</h3>
+                <p>분위기 잡고 키스도 길게 하고, 콘돔도 꼼꼼히 썼는데,<br>삽입하고 몇 번 움직이지도 못했는데 이미 끝나버린 상황.<br>상대는 아직 아무 느낌도 못 느꼈는데 나만 헐떡이고 있으면<br>얼마나 창피하고 자존감이 무너지는지 아세요?<br><br>“이번엔 괜찮을 거야” 하며 약도 먹어봤지만,<br>부작용 때문에 머리가 깨질 듯 아프고,<br>그래도 또 30초 만에 끝나버리면 정말 미칠 것 같습니다.</p>
+                <a href="#" class="kakao-btn fixed-kakao">조루 때문에 더 이상 망신당하고 싶지 않다면 → 카톡 상담</a>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="img-wrap"><img src="https://github.com/gaka1as/cs/blob/main/%E8%94%9A%E5%B1%B1%E5%8B%83%E8%B5%B7%E5%8A%9F%E8%83%BD%E9%9A%9C%E7%A2%8D.png?raw=true"></div>
+            <div class="text">
+                <h3>“옆에 예쁜 여자친구가 누워 있는데도… 전혀 하고 싶은 마음이 안 생긴다”</h3>
+                <p>30대 중반까지만 해도 살짝만 스킨십 해도 바로 반응했는데,<br>요즘은 옆에서 안겨도 “피곤해서 나중에…” 라는 말만 나온다.<br>결국 여자친구가 “나한테 관심 없어?” 라고 서운해하고,<br>서로 말없이 핸드폰만 보게 되는 밤이 반복됩니다.<br><br>친구들은 아직도 “어제 3번 했다” 자랑하는데,<br>나는 일주일에 한 번도 힘들다.<br>이건 단순한 ‘기분 문제’가 아니라 테스토스테론 수치가 이미 50~70% 하락한 상태입니다.</p>
+                <a href="#" class="kakao-btn fixed-kakao">성욕이 돌아오지 않으면 관계도 끝난다 → 지금 카톡 상담</a>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="img-wrap"><img src="https://github.com/gaka1as/cs/blob/main/%E8%81%94%E7%B3%BB%E6%B3%8C%E5%B0%BF%E7%A7%91%E5%8C%BB%E7%94%9F.png?raw=true"></div>
+            <div class="text">
+                <h3>“아침에 일어나면 텐트 치고 있어야 정상인데… 요즘은 완전히 조용하다”</h3>
+                <p>20대~30대 초반까진 눈 뜨면 무조건 단단하게 서 있었는데,<br>어느 순간부터 아침 발기가 완전히 사라졌다.<br>처음엔 “피곤해서 그런가 보다” 했지만,<br>한 달, 두 달, 반년이 지나도 돌아오지 않으면<br>이미 남성 기능이 30~50% 이상 저하된 상태입니다.<br><br>아침 발기는 ‘남성 건강의 심박’입니다.<br>이게 사라졌다는 건 혈관·호르몬·신경계가 동시에 문제를 일으키고 있다는<br>가장 확실한 경고 신호입니다.</p>
+                <a href="#" class="kakao-btn fixed-kakao">아침발기 없으면 3년 안에 완전 발기부전 → 지금 상담</a>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="img-wrap"><img src="https://github.com/gaka1as/cs/blob/main/%E6%B2%BB%E7%96%97%E5%89%8D%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E7%82%B9%E7%AE%80%E5%8C%96.png?raw=true"></div>
+            <div class="text">
+                <h3>“서긴 서는데 고무줄처럼 축축 늘어져서… 제대로 넣을 수도 없다”</h3>
+                <p>발기는 되긴 하는데, 예전처럼 돌돌 말리게 단단하지가 않다.<br>삽입은 간신히 해도 몇 번 움직이면 금방 빠져버리고,<br>“조금만 더 기다려봐…” 하며 어색하게 다시 시도하지만<br>결국 둘 다 포기하고 잠들기 일쑤입니다.<br><br>이건 ‘조금 약한 정도’가 아니라<br>미세혈관이 이미 막히기 시작했고, 산화스트레스가 쌓인 상태입니다.<br>이대로 방치하면 1~2년 안에 완전 발기부전으로 진행됩니다.</p>
+                <a href="#" class="kakao-btn fixed-kakao">반쯤 선 상태로 더 이상 살고 싶지 않다면 → 카톡 상담</a>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="img-wrap"><img src="https://github.com/gaka1as/cs/blob/main/%E6%B2%BB%E7%96%97%E5%89%8D%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E7%82%B9%E7%AE%80%E5%8C%96.png?raw=true"></div>
+            <div class="text">
+                <h3>“전립선·포경 수술했는데… 오히려 전보다 더 약해졌다”</h3>
+                <p>“수술만 하면 다 해결될 거야” 하며 비싼 돈 쓰고 수술받았는데,<br>6개월, 1년이 지나도 예전만 못하다.<br>병원에 다시 가면 “시간이 더 필요하다”, “나이 탓이다”만 반복.<br><br>실제로 수술 후 체계적인 혈류·호르몬·골반저 재활을 하지 않으면<br>70~80%가 제 기능을 찾지 못합니다.<br>지금 이 순간에도 수술 후 관리 안 받아 후회하는 분들이 줄을 잇고 있습니다.</p>
+                <a href="#" class="kakao-btn fixed-kakao">수술했는데 더 나빠졌다면 → 지금이 마지막 기회입니다</a>
+            </div>
+        </div>
     </div>
 
     <div class="review-scroll">
@@ -116,14 +155,14 @@
         </div>
     </div>
 
-    <!-- 表单（关键：用JS拦截提交，完全不让Static Forms跳页面） -->
+    <!-- 表单（新API + 新邮箱） -->
     <div class="form-area">
         <h2>지금 예약하면<br>첫 진료비 50% + 호르몬 10종 무료 검사</h2>
         <p>※ 12월 31일까지 한정</p>
 
         <form id="consultForm">
-            <input type="hidden" name="accessKey" value="sf_0dd7a5n63lk7i4hgj24ia5bg">
-            <input type="hidden" name="emailTo" value="skytang147852sky@gmail.com">
+            <input type="hidden" name="accessKey" value="sf_ageb30jgc6k3247kn26h2b51">
+            <input type="hidden" name="emailTo" value="aiden185163@gmail.com">
             <input type="hidden" name="subject" value="[남성클리닉] 새로운 상담 신청">
 
             <input type="text" name="이름" placeholder="이름" required>
@@ -146,7 +185,7 @@
     </div>
 </div>
 
-<!-- 完全自定义感谢页（100%覆盖） -->
+<!-- 自定义感谢页 -->
 <div id="customThanks">
     <h3>감사합니다!</h3>
     <p>이미 가장 적합한 전문의사를 매칭해 드렸습니다.<br>아래 버튼을 클릭하면 바로 1:1 상담이 시작됩니다.</p>
@@ -184,16 +223,13 @@ document.querySelectorAll('.fixed-kakao, #bottomKakao, #floatKakao, #finalKakaoB
     el.href = myKakao;
 });
 
-// 关键：用JS拦截提交，完全阻止Static Forms跳转
+// JS拦截提交，完全不跳任何第三方页面
 document.getElementById('consultForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // 阻止默认跳转
-    
-    // 用fetch发送数据（信息进邮箱）
+    e.preventDefault();
     fetch('https://api.staticforms.xyz/submit', {
         method: 'POST',
         body: new FormData(this)
     }).finally(() => {
-        // 提交后直接显示自定义感谢页
         document.getElementById('customThanks').style.display = 'flex';
     });
 });
